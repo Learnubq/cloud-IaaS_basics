@@ -1,7 +1,7 @@
 # cloud & IaaS Basics Module
 This is a repository to showcase my cloud and IaaS project for the TWN DevOps Bootcamp. For this project I created a server using DigitalOcean and deployed a Java application on it using Gradle as a build tool.
 
-## Project Desription
+## Project Description
 
 1. I setup and configured a droplet server on DigitalOcean.
 2. I then created and configured a new Linux user on the droplet before deploying an application on it. This is a security best practice as it prevents giving the application root permissions to configure the system, which would have occurred if I deployed the Java application using the root user. The new user I created is called "new_admin".
