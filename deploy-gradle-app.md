@@ -29,3 +29,14 @@ build
 
 ![image](https://github.com/user-attachments/assets/84e48d48-c709-44db-8827-a030b78c5d20)
 
+4. **Securely copied the JAR file to server's new_admin user's home directory from local machine:**
+
+```bash
+scp java-react-example.jar new_admin@dropletserver_ip:/home/new_admin/cloud-IaaS_basics
+```
+
+5. **Run the Java app in the directory /home/new_admin/cloud-IaaS_basics:**
+
+```bash
+
+
