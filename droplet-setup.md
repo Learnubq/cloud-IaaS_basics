@@ -14,6 +14,7 @@
 ```bash
 adduser new_admin
 ```
+![Screenshot from 2025-06-29 11-43-45](https://github.com/user-attachments/assets/9201a1c5-1ade-45c9-b672-463c6f1f1bb4)
 
 2. **Set up SSH access for the new user to login directl to DigitalOcean droplet server:**
 
@@ -21,9 +22,10 @@ adduser new_admin
 su - new_admin
 ssh-keygen -t rsa -b 4096 -C "new_admin@mydroplet"
 cat /home/new_admin/.ssh/id_rsa.pub >> /home/new_admin/.ssh/authorized_keys
+```
 
 *Copy output of --> cat /home/new_admin/.ssh/id_rsa.pub --> add as a new ssh key to DigitalOcean to allow SSH login directly to new_admin user without having to login first as root user
-```
+
 
 3. Test SSH login directly to DigitalOcean droplet server
 
