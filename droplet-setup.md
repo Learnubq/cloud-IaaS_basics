@@ -9,15 +9,16 @@
 
 ### Steps Performed:
 
-1. **Created a new user named "new_admin" on the droplet server:**
+1. **Created a new user named "new_admin" on the droplet server and adding to sudo group:**
 
 ```bash
 adduser new_admin
+usermod -aG sudo new_admin
 ```
 ![pwd](https://github.com/user-attachments/assets/02df1c8e-f085-46f5-b207-56522f961fb0)
 
 
-2. **Set up SSH access for the new user to login directl to DigitalOcean droplet server:**
+2. **Set up SSH access for the new user to login directly to DigitalOcean droplet server:**
 
 ```bash
 su - new_admin
