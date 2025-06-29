@@ -14,7 +14,8 @@
 ```bash
 adduser new_admin
 ```
-![Screenshot from 2025-06-29 11-43-45](https://github.com/user-attachments/assets/9201a1c5-1ade-45c9-b672-463c6f1f1bb4)
+![pwd](https://github.com/user-attachments/assets/02df1c8e-f085-46f5-b207-56522f961fb0)
+
 
 2. **Set up SSH access for the new user to login directl to DigitalOcean droplet server:**
 
