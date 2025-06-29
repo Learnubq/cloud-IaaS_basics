@@ -18,12 +18,13 @@ usermod -aG sudo new_admin
 ![pwd](https://github.com/user-attachments/assets/02df1c8e-f085-46f5-b207-56522f961fb0)
 
 
-2. **Set up SSH access for the new user to login directly to DigitalOcean droplet server:**
+2. **Set up SSH access for the new user to login directly to DigitalOcean droplet server - need to provide SSH key for root user to new_admin user otherwise server won't recognize the new_admin user:**
 
+*Copy your public SSH key from local machine and paste in the droplet server's new_admin user's .ssh folder you will create (in authorized_keys file)
 ```bash
 su - new_admin
-ssh-keygen -t rsa -b 4096 -C "new_admin@mydroplet"
-cat /home/new_admin/.ssh/id_rsa.pub >> /home/new_admin/.ssh/authorized_keys
+mkdir .ssh
+sudo vim .ssh/authorized_keys
 ```
 
 *Copy output of --> cat /home/new_admin/.ssh/id_rsa.pub --> add as a new ssh key to DigitalOcean to allow SSH login directly to new_admin user without having to login first as root user
