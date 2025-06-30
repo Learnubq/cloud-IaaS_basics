@@ -1,4 +1,4 @@
-# cloud & IaaS Basics Module
+# Cloud & IaaS Basics Module
 This is a repository to showcase my cloud and IaaS project for the TWN DevOps Bootcamp. For this project I created a server using DigitalOcean and deployed a Java application on it using Gradle as a build tool.
 
 ## Project Description
